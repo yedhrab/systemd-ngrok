@@ -1,12 +1,14 @@
-version: "2"
+---
 authtoken: <add_your_token_here>
 tunnels:
-    web:
-        proto: http
-        addr: 80
-    ssh:
-        proto: tcp
-        addr: 22
-    vnc:
-        proto: tcp
-        addr: 5900
+  ssh:
+    addr: 22
+    proto: tcp
+  vnc:
+    addr: 5900
+    proto: tcp
+  web:
+    addr: 80
+    domain: <add_your_static_domain_here>
+    proto: http
+version: '2'
